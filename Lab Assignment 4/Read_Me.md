@@ -20,26 +20,39 @@ Here we will take key as a friend along with a person and value will be list of 
 For map (A -> B C D) :
 
 (A B) -> B C D
+
 (A C) -> B C D
+
 (A D) -> B C D
 
 The same way it will be look for all rows. We need to group them as per keys before sending them to reducer. 
 
 (A B) -> (A C D E) (B C D)
+
 (A C) -> (A B D E) (B C D)
+
 (A D) -> (A B C E) (B C D)
+
 (B C) -> (A B D E) (A C D E)
 
 Now we can pass this to reducer and reducer will take these lists as sets and will find out common values from it and the result will be as follow.
 
 (A B) -> (C D)
+
 (A C) -> (B D)
+
 (A D) -> (B C)
+
 (B C) -> (A D E)
+
 (B D) -> (A C E)
+
 (B E) -> (C D)
+
 (C D) -> (A B E)
+
 (C E) -> (B D)
+
 (D E) -> (B C)
 
 
