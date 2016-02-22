@@ -1,0 +1,12 @@
+Q-1 Below are the explanation k-means algorithms with R.
+
+Kmeans:-
+Here we know the number of clusters in which we want to devide the dataset. For each cluster intially select the random centroid 
+and then consider it as mean. Each point assgined mean using nearest neighbour method.
+
+This is repetative process and repeats untill we get centres doesnt mvoe anymore.
+
+Q-2 API usage with andorid app
+
+Here I have used yahoo's weather api to catch the current weather of particular location. 
+
