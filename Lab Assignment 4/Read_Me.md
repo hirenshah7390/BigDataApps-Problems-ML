@@ -6,9 +6,13 @@ We are using map reduce over here to find the common friend of any two friends. 
 Let say we stored friends as Person->[List of Friends]:
 
 A -> B C D
+
 B -> A C D E
+
 C -> A B D E
+
 D -> A B C E
+
 E -> B C D
 
 Here we will take key as a friend along with a person and value will be list of friend. The all mapper will be look like below, let say for A it will be: 
