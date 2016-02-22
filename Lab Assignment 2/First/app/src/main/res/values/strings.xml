@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">First</string>
+    <string name="temperature">Temprature</string>
+    <string name="condition">Condition</string>
+    <string name="location">Location</string>
+</resources>

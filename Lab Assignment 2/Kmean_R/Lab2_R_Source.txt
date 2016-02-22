@@ -1,0 +1,54 @@
+ k.data = read.csv(file.choose(), header = TRUE)
+> head(k.data)
+  slength swidth plength pwidth     species
+1     5.1    3.5     1.4    0.2 Iris-setosa
+2     4.9    3.0     1.4    0.2 Iris-setosa
+3     4.7    3.2     1.3    0.2 Iris-setosa
+4     4.6    3.1     1.5    0.2 Iris-setosa
+5     5.0    3.6     1.4    0.2 Iris-setosa
+6     5.4    3.9     1.7    0.4 Iris-setosa
+> res<-kmeans(k.data,3)
+Error in do_one(nmeth) : NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In kmeans(k.data, 3) : NAs introduced by coercion
+> res <- kmeans(k.data,3)
+Error in do_one(nmeth) : NA/NaN/Inf in foreign function call (arg 1)
+In addition: Warning message:
+In kmeans(k.data, 3) : NAs introduced by coercion
+> k.data$species = NULL
+> res <- kmeans(k.data,3)
+> res
+K-means clustering with 3 clusters of sizes 38, 50, 62
+
+Cluster means:
+   slength   swidth  plength   pwidth
+1 6.850000 3.073684 5.742105 2.071053
+2 5.006000 3.418000 1.464000 0.244000
+3 5.901613 2.748387 4.393548 1.433871
+
+Clustering vector:
+  [1] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ [39] 2 2 2 2 2 2 2 2 2 2 2 2 3 3 1 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+ [77] 3 1 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 1 3 1 1 1 1 3 1 1 1 1 1 1 3
+[115] 3 1 1 1 1 3 1 3 1 3 1 1 3 3 1 1 1 1 1 3 1 1 1 1 3 1 1 1 3 1 1 1 3 1 1 3
+
+Within cluster sum of squares by cluster:
+[1] 23.87947 15.24040 39.82097
+ (between_SS / total_SS =  88.4 %)
+
+Available components:
+
+[1] "cluster"      "centers"      "totss"        "withinss"     "tot.withinss"
+[6] "betweenss"    "size"         "iter"         "ifault"      
+> plot(c["plength","pwidth"]),col=res$cluster)
+Error: unexpected ',' in "plot(c["plength","pwidth"]),"
+> plot(iris(c["plength","pwidth"]),col=res$cluster)
+Error in plot(iris(c["plength", "pwidth"]), col = res$cluster) : 
+  could not find function "iris"
+> plot(iris[c["plength","pwidth")],col=res$cluster)
+Error: unexpected ')' in "plot(iris[c["plength","pwidth")"
+> plot(iris[c("plength","pwidth")],col=res$cluster)
+Error in `[.data.frame`(iris, c("plength", "pwidth")) : 
+  undefined columns selected
+> plot(k.data[c("plength","pwidth")],col=res$cluster)
+

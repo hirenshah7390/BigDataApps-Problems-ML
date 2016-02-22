@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\hhstm4\Desktop\Spring_2016\Big Data\tuto_4\PictureDetect\app\libs\faceppsdk_min.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3e26e757ce1873e4be56d3b49130e6ae607b5fdb">
+        <dex dex="C:\Users\hhstm4\Desktop\Spring_2016\Big Data\tuto_4\PictureDetect\app\build\intermediates\pre-dexed\debug\faceppsdk_min_65a0a8b9cfa3207bde9fd6882f1a8a4b027f6115.jar" />
+    </item>
+    <item
+        jar="C:\Users\hhstm4\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\Users\hhstm4\Desktop\Spring_2016\Big Data\tuto_4\PictureDetect\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0_4f53cf13eb323092c4011b86039173b5d8fe3fcb.jar" />
+    </item>
+
+</items>
