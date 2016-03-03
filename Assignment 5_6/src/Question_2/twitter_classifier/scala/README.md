@@ -1,6 +1,6 @@
 # Building the Twitter Classifier Assembly
 
-Steps for building the assembly:
+Steps for building the assembly:It is already generated in target folder for this project under scala2.10
 
 * Run SBT using the `assembly` target.  Example: `$ ./sbt/sbt clean assembly`
 
