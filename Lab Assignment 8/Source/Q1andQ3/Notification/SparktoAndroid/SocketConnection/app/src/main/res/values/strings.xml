@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AChartEngineBarChart</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">AChartEngineBarChart</string>
+    <string name="str_btn_chart">Popular Hash Tag Bar Chart</string>
+</resources>
