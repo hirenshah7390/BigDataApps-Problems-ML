@@ -1,4 +1,4 @@
-# BigDataApps-Spring2016-LabAssignments
+# BigDataApps-Problems- ML
 
 The repository consists of all the Lab Assigments done by
 
